@@ -1,0 +1,14 @@
+# n + 239Pu: Prompt neutron  multiplicity distribution 
+# E-incident = 1.00E-06 MeV
+# Mean value (nubar-prompt) =    3.31959
+# Average P(nu)             =    3.32019
+# number   nu 
+  0     5.4632E-03
+  1     5.0219E-02
+  2     1.8116E-01
+  3     3.2540E-01
+  4     2.8867E-01
+  5     1.2106E-01
+  6     2.4943E-02
+  7     2.8682E-03
+  8     2.1684E-04

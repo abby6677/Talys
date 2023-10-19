@@ -1,0 +1,25 @@
+#
+# n-Pb208-nngamma
+#
+# General
+#
+projectile n
+element pb
+mass 208
+energy energies
+#
+# Parameters
+#
+isomer 1.e-4
+maxZ 0
+gnorm 0.35
+Rgamma 2.2
+egr     82 209 12.0    E1 1
+optmodfileN 82 n-Pb208.omp
+#
+# Output
+#
+channels y
+filechannels y
+fileresidual y
+outgamdis y

@@ -1,0 +1,19 @@
+#
+# n-Y089-RRR-group
+#
+# General
+#
+projectile n
+element Y
+mass 89
+energy n0-2.grid
+#
+# Model
+#
+resonance y
+group y
+#
+# Output
+#
+channels y
+filechannels y

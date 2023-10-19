@@ -1,0 +1,30 @@
+#!/bin/bash
+#
+# This script runs TALYS for each sample case 
+# present in the new/ directories and determines
+# the numerical differences with the results of
+# the org/ directories
+#
+files=`find . -name talys.inp | grep new | sort`
+#
+homedir=`pwd`
+talys=${HOME}/bin/talys
+for f in ${files}; do
+  dir=`dirname ${f}`
+  cd ${dir}
+  echo "*** Running sample case " $dir
+  time $talys < talys.inp > talys.out
+  echo
+  if [ -e outputdiff ] ; then
+    rm outputdiff
+  fi
+  for of in `ls -1`; do
+    diff -bitw ${of} ../org/${of} >> /dev/null
+    if [ $? -eq 1 ] ; then
+      echo $of >> outputdiff
+      diff -bitw ${of} ../org/${of} >> outputdiff
+    fi
+  done
+  cd $homedir
+done
+echo "*** All sample cases done " 

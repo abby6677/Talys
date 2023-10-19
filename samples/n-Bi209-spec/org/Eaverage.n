@@ -1,0 +1,6 @@
+# n + 209Bi Average neutron  emission energy
+# Q-value    = 0.00000E+00
+# 
+# # energies =     1
+#    E       E-average
+ 2.00000E+01 2.45423E+00

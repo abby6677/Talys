@@ -1,0 +1,15 @@
+#
+# n-Os187-astro-ng
+#
+# General 
+#
+projectile n
+element    os
+mass       187
+energy   energies
+channels y
+filechannels y
+#
+# Parameters 
+#
+best y

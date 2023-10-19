@@ -1,0 +1,8 @@
+# n + 239Pu: Fission product yield of 129Te isomer      
+# 
+# # energies =     3
+# 
+# E-incident     FP yield      FP xs   Ratio 
+ 2.53000E-08 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 2.00000E-07 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 1.00000E-06 1.36064E-04 2.22610E+01 4.52822E-01

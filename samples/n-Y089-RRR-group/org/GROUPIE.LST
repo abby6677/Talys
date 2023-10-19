@@ -1,0 +1,103 @@
+ Multi-Group and Multi-Band Parameters from ENDF/B Data (GROUPIE 2017-1)
+ ------------------------------------------------------------------------------
+ ENDF/B Input and Output Data Filenames
+ n-Y089.res.point                                                        
+ n-Y089.res.group                                                        
+ ------------------------------------------------------------------------------
+ Retrieval Criteria------------        MAT
+ Number of Energy Groups-------        700 (TART)          
+ Maximum Number of Bands/Group-          2 Conserve 1/[Total+<Total>]  
+ Points in Weighting Spectrum--      30000 (1/E)                               
+ Band Selection Criteria------- .001000000 (   0.1000 per-cent)
+ Sigma-0 Definition------------ Multiple of Unshielded Total in Each Group
+ High E Cross Section Extension = Zero (Standard Convention)
+ ------------------------------------------------------------------------------
+ Self-Shielded Listing---------        Yes (Cross Sections)        
+ Multi-Band Listing------------        Yes
+ Multi-Band Library File-------        Yes
+ Unshielded Averages in ENDF/B-        Yes (Histogram)     
+ Unshielded Averages Listing---        Yes (Cross Sections)        
+ ------------------------------------------------------------------------------
+ Multi-Band Library Identification
+ ------------------------------------------------------------------------------
+                                                                         
+ ------------------------------------------------------------------------------
+ MAT/MF/MT Ranges
+ ------------------------------------------------------------------------------
+    Minimum       Maximum
+    MAT MF  MT    MAT MF  MT
+ ------------------------------------------------------------------------------
+      0  0   0   9999 99 999 (Default Option)
+ ------------------------------------------------------------------------------
+ ENDF/B Tape Label
+ ------------------------------------------------------------------------------
+  n-Y089.res.tendl.2021: Merger of MF1 and MF2                       99
+ ------------------------------------------------------------------------------
+ Isotope    MAT MF Fmt Kelvin      Total Elastic Capture Fission   Other
+                                  Points  Points  Points  Points  Points
+ ------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------
+ Resonance Region for  39-Y -89 
+ Resolved Resonance Region..... 1.00000E-5 to  301001.000 eV
+ Unresolved Resonance Region... NONE
+ ------------------------------------------------------------------------------
+ 39-Y -89  3925  3  6 293.160004   51281   50698  113598       0       0
+ ------------------------------------------------------------------------------
+                         Totals    51281   50698  113598       0       0
+
+
+
+        Maximum per-cent Error During Sigma-0 INTERPOLATION
+ ------------------------------------------------------------------------------
+    ZA *    1 Band  *  2 Bands  *  3 Bands  *  4 Bands  *  5 Bands
+ ------------------------------------------------------------------------------
+ 39089 *    389.13  *    12.86  *           *           *
+
+
+
+        Maximum per-cent Error vs. Sigma-0 for Entire FILE
+ ------------------------------------------------------------------------------
+ Index *    1 Band  *  2 Bands  *  3 Bands  *  4 Bands  *  5 Bands
+ ------------------------------------------------------------------------------
+     1 *      0.00  *     0.00  *
+     2 *      0.51  *     0.18  *
+     3 *      1.02  *     0.36  *
+     4 *      2.03  *     0.71  *
+     5 *      4.00  *     1.35  *
+     6 *      7.82  *     2.53  *
+     7 *     14.98  *     4.50  *
+     8 *     27.78  *     7.33  *
+     9 *     49.14  *    10.47  *
+    10 *     81.71  *    12.68  *
+    11 *    126.38  *    12.86  *
+    12 *    180.51  *    11.00  *
+    13 *    237.37  *     8.08  *
+    14 *    288.50  *     5.22  *
+    15 *    327.93  *     3.18  *
+    16 *    354.47  *     2.28  *
+    17 *    370.47  *     1.39  *
+    18 *    379.41  *     0.78  *
+    19 *    384.16  *     0.41  *
+    20 *    386.62  *     0.21  *
+    21 *    387.87  *     0.11  *
+    22 *    388.50  *     0.05  *
+    23 *    389.13  *     0.00  *
+    24 *    521.99  *    23.55  *
+    25 *    556.68  *    66.31  *
+ ------------------------------------------------------------------------------
+ Summary of Multi-Band Results
+ ------------------------------------------------------------------------------
+ No Self-Shielding (Conserve 1 Moment)..........        497
+ Little Self-Shielding (Conserve 2 Moments).....        118
+ General Self-Shielding (Conserve 3 Moments)....         78
+ Strict Convergence.............................          6
+ Not Strict Convergence.........................          1
+ Soft Convergence...............................          0
+ Very Soft Convergence..........................          0
+ No Convergence.................................          0
+ Sum............................................        700
+ Check (Evaluations x Groups)...................        700
+ ------------------------------------------------------------------------------
+ Other Points = Points Other Than Total, Elastic, Capture or Fission.
+ This Will Always be Zero Unless Unshielded Output is Requested.
+ ------------------------------------------------------------------------------

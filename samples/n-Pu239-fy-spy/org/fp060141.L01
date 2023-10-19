@@ -1,0 +1,8 @@
+# n + 239Pu: Fission product yield of 141Nd isomer      
+# 
+# # energies =     3
+# 
+# E-incident     FP yield      FP xs   Ratio 
+ 2.53000E-08 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 2.00000E-07 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 1.00000E-06 1.27777E-07 2.09053E-02 3.52409E-01

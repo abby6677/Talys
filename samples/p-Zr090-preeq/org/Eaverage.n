@@ -1,0 +1,6 @@
+# p +  90Zr Average neutron  emission energy
+# Q-value    =-6.89337E+00
+# 
+# # energies =     1
+#    E       E-average
+ 1.20000E+02 8.66524E+00

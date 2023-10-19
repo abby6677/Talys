@@ -1,0 +1,10 @@
+#
+# p-Bi209-500MeV
+#
+# General
+#
+projectile p
+element bi
+mass 209
+energy 100. 500. 100.
+bins 60

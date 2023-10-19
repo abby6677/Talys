@@ -1,0 +1,30 @@
+\begin{samplecase}
+{\bf Unresolved resonance range parameters: n + ${}^{136}$Ba}\newline
+With TALYS, parameters for the unresolved resonance range (URR) can be produced.
+The following input file is used
+
+\VerbatimInput{\samples n-Ba136-URR/org/talys.inp}
+
+where the line {\bf urr y} results in a set of URR output files which are
+described page \pageref{key:urr}. The top of the general output file {\em urr.dat}
+looks as follows:
+{\small \begin{verbatim}
+
+#
+# Resonance parameters for Z=  56 A= 136 (136Ba) Target spin= 0.0
+# Thermal capture cross section= 6.70000E+02 mb   Sn= 6.90561E+00 MeV
+#
+#  Einc[MeV]= 1.00000E-03
+# Rprime[fm]= 4.39731E+00
+# l   J      D(l)[eV]   D(l,J)[eV]    S(l)        S(l,J)   Gx(l,J)[eV] Gn(l,J)[e
+  0  0.5   1.20855E+03 1.20855E+03 1.80190E+00 1.80190E+00 0.00000E+00 2.17768E-
+  1  0.5   4.17392E+02 1.20855E+03 9.29906E-01 1.16255E+00 0.00000E+00 1.40500E-
+  1  1.5   4.17392E+02 6.37595E+02 9.29906E-01 8.52357E-01 0.00000E+00 5.43458E-
+#
+#  Einc[MeV]= 2.00000E-03
+# Rprime[fm]= 4.38034E+00
+# l   J      D(l)[eV]   D(l,J)[eV]    S(l)        S(l,J)   Gx(l,J)[eV] Gn(l,J)[e
+  0  0.5   1.20703E+03 1.20703E+03 1.78817E+00 1.78817E+00 0.00000E+00 2.15838E-
+\end{verbatim} } \renewcommand{\baselinestretch}{1.07}\small\normalsize
+\noindent
+\end{samplecase}

@@ -1,0 +1,17 @@
+#
+# a-Ho165-omp1
+#
+# General
+#
+projectile a
+element Ho
+mass 165
+energy 12. 40. 0.5
+#
+# Model
+#
+alphaomp 1
+#
+# Output
+#
+outomp y

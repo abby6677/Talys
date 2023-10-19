@@ -1,0 +1,15 @@
+#
+# n-Ge074-vib
+#
+# General
+#
+projectile n
+element ge 
+mass 74
+energy energies
+#
+# Output
+#
+outexcitation n
+outdiscrete y
+filediscrete 1        

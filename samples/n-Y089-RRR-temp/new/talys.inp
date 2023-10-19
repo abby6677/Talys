@@ -1,0 +1,19 @@
+#
+# n-Y089-RRR-temp
+#
+# General
+#
+projectile n
+element Y
+mass 89
+energy n0-2.grid
+#
+# Model
+#
+resonance y
+Tres 1200.
+#
+# Output
+#
+channels y
+filechannels y

@@ -1,0 +1,8 @@
+# n + 239Pu: Fission product yield of 133Xe isomer      
+# 
+# # energies =     3
+# 
+# E-incident     FP yield      FP xs   Ratio 
+ 2.53000E-08 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 2.00000E-07 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 1.00000E-06 1.59444E-04 2.60859E+01 7.30884E-01

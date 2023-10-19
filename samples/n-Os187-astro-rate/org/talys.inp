@@ -1,0 +1,19 @@
+#
+# n-Os187-astro-rate
+#
+# General 
+#
+projectile n
+element    os
+mass       187
+energy   1.
+#
+# Parameters 
+#
+ldmodel   5
+asys n
+strength 2
+gnorm 0.27
+astro y
+astrogs n
+partable y

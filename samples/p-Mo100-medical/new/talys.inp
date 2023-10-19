@@ -1,0 +1,20 @@
+#
+# p-Mo100-medical
+#
+# General
+#
+projectile p
+element    Mo
+mass       100
+energy     8. 30. 0.5
+#
+# Spherical OMP
+#
+spherical y
+#
+# Medical isotope production
+#
+production y
+Ibeam 0.15
+Ebeam 24.
+Eback 10.

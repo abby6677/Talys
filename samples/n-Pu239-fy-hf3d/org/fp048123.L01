@@ -1,0 +1,8 @@
+# n + 239Pu: Fission product yield of 123Cd isomer      
+# 
+# # energies =     3
+# 
+# E-incident     FP yield      FP xs   Ratio 
+ 2.53000E-08 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 2.00000E-07 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 1.00000E-06 1.31057E-04 2.14415E+01 4.21889E-01

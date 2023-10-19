@@ -1,0 +1,16 @@
+# n + 238U : Prompt neutron  multiplicity distribution 
+# E-incident =   10.000 MeV
+# Mean value (nubar-prompt) =    4.28391
+# Average P(nu)             =    0.00000
+# number   nu 
+  0     0.0000E+00
+  1     1.1766E-01
+  2     1.3453E-01
+  3     1.4560E-01
+  4     1.4083E-01
+  5     1.2402E-01
+  6     1.1475E-01
+  7     1.1155E-01
+  8     1.1107E-01
+  9     9.9319E-01
+ 10     3.9523E-07

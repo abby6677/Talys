@@ -1,0 +1,8 @@
+# n + 239Pu: Fission product yield of 156Tb isomer      
+# 
+# # energies =     3
+# 
+# E-incident     FP yield      FP xs   Ratio 
+ 2.53000E-08 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 2.00000E-07 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 1.00000E-06 3.09688E-09 5.06672E-04 2.56726E-01

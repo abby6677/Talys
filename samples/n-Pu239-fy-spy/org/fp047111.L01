@@ -1,0 +1,8 @@
+# n + 239Pu: Fission product yield of 111Ag isomer      
+# 
+# # energies =     3
+# 
+# E-incident     FP yield      FP xs   Ratio 
+ 2.53000E-08 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 2.00000E-07 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 1.00000E-06 4.45230E-05 7.28430E+00 5.72334E-01

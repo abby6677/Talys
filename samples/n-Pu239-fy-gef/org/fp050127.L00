@@ -1,0 +1,8 @@
+# n + 239Pu: Fission product yield of 127Sn ground state
+# 
+# # energies =     3
+# 
+# E-incident     FP yield      FP xs   Ratio 
+ 2.53000E-08 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 2.00000E-07 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 1.00000E-06 1.41095E-03 2.30840E+02 5.30934E-01

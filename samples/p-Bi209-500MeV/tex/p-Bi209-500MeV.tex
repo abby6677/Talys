@@ -1,0 +1,34 @@
+\begin{samplecase}
+{\bf Calculations up to 500 MeV for p + ${}^{209}$Bi}\newline
+In TALYS, the maximum allowed incident energy has formally been extended to 1 GeV. 
+The term 'formally' means that the code seems to produce reasonable results, without 
+crashing, while we are well aware that the physics beyond about 200 MeV is different 
+from that at lower energies. The question is at which energy 
+the ``low-energy'' models will 
+start to fail. To investigate this, the extension to 1 GeV has been made.
+In this sample case we perform calculations for p + ${}^{209}$Bi at 5 different 
+energies,
+
+\VerbatimInput{\samples p-Bi209-500MeV/org/talys.inp}
+
+Here we use the option to give equidistant incident energies from 100 to 500 MeV with 
+steps of 100 MeV.
+All results can be found in the usual files, e.g. the residual production cross 
+sections of $^{204}$Pb are in {\it rp082204.tot}, which look as follows
+{\small \begin{verbatim}
+
+# p + 209Bi: Production of 204Pb - Total
+# Q-value    =-4.42737E+00 mass= 203.973043
+# E-threshold= 4.44871E+00
+# # energies =  5
+#    E         xs
+1.000E+02 2.81964E+01
+2.000E+02 3.70364E+01
+3.000E+02 4.09552E+01
+4.000E+02 3.84491E+01
+5.000E+02 3.62129E+01
+\end{verbatim} } \renewcommand{\baselinestretch}{1.07}\small\normalsize
+\noindent
+Obviously, the user may extend this case up to 1 GeV and with a finer incident energy 
+grid.
+\end{samplecase}

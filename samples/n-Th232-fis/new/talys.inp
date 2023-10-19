@@ -1,0 +1,16 @@
+#
+# n-Th232-fis
+#
+# General
+#
+projectile n
+element    Th
+mass       232
+energy     energies
+partable y
+bins 40
+channels y
+filechannels y
+outfission y
+best y
+ecissave y

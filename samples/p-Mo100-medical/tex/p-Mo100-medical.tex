@@ -1,0 +1,99 @@
+\begin{samplecase}
+{\bf Medical isotope production with p + ${}^{100}$Mo}\newline
+In this sample case, the activity of all the produced isotopes from the 
+reaction p + ${}^{100}$Mo are given, for a 150 $\mu$A proton accelerator, as a function of time.
+The following input file is used
+
+\VerbatimInput{\samples p-Mo100-medical/org/talys.inp}
+
+Note the use of the {\bf energy} keyword: Cross sections 
+are calculated for incident energies between 8 and 30 MeV with 0.5 MeV 
+energy steps. The keyword {\bf production y} means that activities of all 
+radioactive products as a function of bombarding and/or decay time will be 
+produced in tables. The incident energy of the particle beam is 24 MeV, and
+the required thickness of the target (which is given in the output) is such that at the 
+back of the target the energy is 10 MeV. Other keywords relevant for isotope 
+production, such as 
+{\bf Tcool}, see page \pageref{key:Tcool},
+{\bf Tirrad}, see page \pageref{key:Tirrad},
+{\bf rho}, see page \pageref{key:rho},
+{\bf area}, see page \pageref{key:area},
+{\bf radiounit}, see page \pageref{key:radiounit},
+{\bf yieldunit}, see page \pageref{key:yieldunit},
+have their default values in this sample case.
+
+We like to point out an efficient option for medical isotope calculations. 
+Suppose one is interested in varying several accelerator options, 
+such as e.g. {\bf Ebeam}. Once the first calculation, like the sample case 
+above, has been done, one may rerun that case and add the extra line 
+{\bf reaction n} to the input file. 
+Then, TALYS will {\it not} redo the nuclear reaction calculations, but use the 
+various {\it rpZZZAAA.tot, etc.} cross section output files which are already available in the work 
+directory. Obviously, {\bf Ebeam} and {\bf Eback} must always fall inside the energy 
+grid for which the cross sections are calculated, in this case between 8 and 30 MeV.
+
+The tail of the standard output files contains some general parameters:
+{\small \begin{verbatim}
+
+ Summary of isotope production
+
+ Maximal irradiation time    :   0 years   1 days   0 hours   0 minutes   0 sec
+ Cooling time                :   0 years   1 days   0 hours   0 minutes   0 sec
+ Energy range                :  24.000 -->  10.000 MeV
+ Beam current                :   0.150 mA
+ Target material density     :  10.220 g/cm^3
+ Target area                 :   1.000 cm^2
+ Effective target thickness  :   0.085 cm
+ Effective target volume     :   0.085 cm^3
+ Effective target mass       :   0.865 g
+ Number of target atoms      :  5.20730E+21
+ Number of incident particles:  9.36226E+14 s^-1
+ Produced heat in target     :   2.100 kW
+\end{verbatim} } \renewcommand{\baselinestretch}{1.07}\small\normalsize
+\noindent
+More interesting are probably the files with the produced activity (in Bq or Ci) per
+isotope. These yields are in files
+{\em YZZZAAA.tot} where ZZZ is the charge number and AAA is the mass number in
+(i3.3) format. For produced isomers, and ground states, 
+there are additional files {\em pZZZAAA.LMM}, where MM is the number
+of the isomer (ground state=0) in (i2.2) format.
+For the above sample case, {\it Y043099.L02}, i.e. the production of ${}^{99m}$Tc
+looks as follows:
+{\small \begin{verbatim}
+
+# Reaction: p + 100Mo Production of  99Tc Isomer= 1
+# Half life            :      0 years   0 days  6 hours  0 minutes 36 seconds
+# Maximum production at:      0 years   3 days 18 hours  0 minutes 32 seconds
+# Initial production rate:  1.08493E-10 [s^-1] Decay rate:  3.20368E-05 [s^-1]
+# # time points =100
+# Time [h] Activity [GBq] #isotopes [   ]  Yield [GBq/mAh]  Isotopic frac.
+     0.5    3.16572E+01    9.88152E+14    4.22096E+02        0.11878
+     1.0    6.15404E+01    1.92093E+15    3.98443E+02        0.11551
+     1.5    8.97491E+01    2.80144E+15    3.76115E+02        0.11233
+     2.0    1.16377E+02    3.63261E+15    3.55039E+02        0.10925
+     2.5    1.41513E+02    4.41720E+15    3.35144E+02        0.10628
+     3.0    1.65240E+02    5.15783E+15    3.16363E+02        0.10342
+     3.5    1.87638E+02    5.85695E+15    2.98635E+02        0.10067
+     4.0    2.08780E+02    6.51689E+15    2.81900E+02        0.09801
+     4.5    2.28738E+02    7.13986E+15    2.66103E+02        0.09545
+     5.0    2.47577E+02    7.72791E+15    2.51191E+02        0.09298
+     5.5    2.65361E+02    8.28301E+15    2.37115E+02        0.09060
+     6.0    2.82148E+02    8.80701E+15    2.23828E+02        0.08831
+     6.5    2.97994E+02    9.30164E+15    2.11285E+02        0.08609
+     7.0    3.12953E+02    9.76855E+15    1.99445E+02        0.08396
+     7.5    3.27073E+02    1.02093E+16    1.88268E+02        0.08190
+     8.0    3.40402E+02    1.06253E+16    1.77718E+02        0.07991
+\end{verbatim} } \renewcommand{\baselinestretch}{1.07}\small\normalsize
+\noindent
+where the final column denotes the fraction of the produced isotope relative to all 
+isotopes of that element. Fig. \ref{tc99m} shows the $^{99m}$Tc production as a function of time.
+Note that the curve is not  a straight line due to the decay of $^{99m}$Tc to 
+the ground state.
+\end{samplecase}
+\begin{figure}
+\centering\includegraphics[scale=0.5,angle=270]{Y043099}
+\caption{Total activity of $^{99m}$Tc produced by a 24 MeV proton accelerator of 
+150 $\mu$A and a $^{100}$Mo target with an energy of 10 MeV at the back of the 
+target.}
+\label{tc99m}
+\end{figure}

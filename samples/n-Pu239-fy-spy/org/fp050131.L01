@@ -1,0 +1,8 @@
+# n + 239Pu: Fission product yield of 131Sn isomer      
+# 
+# # energies =     3
+# 
+# E-incident     FP yield      FP xs   Ratio 
+ 2.53000E-08 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 2.00000E-07 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 1.00000E-06 8.05562E-04 1.31796E+02 3.80199E-01

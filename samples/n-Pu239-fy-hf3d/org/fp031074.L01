@@ -1,0 +1,8 @@
+# n + 239Pu: Fission product yield of  74Ga isomer      
+# 
+# # energies =     3
+# 
+# E-incident     FP yield      FP xs   Ratio 
+ 2.53000E-08 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 2.00000E-07 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 1.00000E-06 3.15229E-07 5.15730E-02 2.77400E-01

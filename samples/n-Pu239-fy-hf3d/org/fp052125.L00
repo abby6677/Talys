@@ -1,0 +1,8 @@
+# n + 239Pu: Fission product yield of 125Te ground state
+# 
+# # energies =     3
+# 
+# E-incident     FP yield      FP xs   Ratio 
+ 2.53000E-08 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 2.00000E-07 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 1.00000E-06 3.25771E-09 5.32977E-04 4.82706E-01

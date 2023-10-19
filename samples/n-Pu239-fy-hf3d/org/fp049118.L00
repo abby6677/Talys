@@ -1,0 +1,8 @@
+# n + 239Pu: Fission product yield of 118In ground state
+# 
+# # energies =     3
+# 
+# E-incident     FP yield      FP xs   Ratio 
+ 2.53000E-08 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 2.00000E-07 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 1.00000E-06 6.95303E-08 1.13755E-02 2.55458E-01

@@ -1,0 +1,8 @@
+# n + 239Pu: Fission product yield of 116In isomer      
+# 
+# # energies =     3
+# 
+# E-incident     FP yield      FP xs   Ratio 
+ 2.53000E-08 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 2.00000E-07 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 1.00000E-06 5.66370E-05 9.26624E+00 8.41081E-01
