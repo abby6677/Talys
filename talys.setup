@@ -5,6 +5,7 @@ unalias -a
 # All you have to do is adapt the next variables to your own situation,
 # and run.....
 #
+#conda deactivate !!!!!!!!!!!
 compiler='gfortran'
 Thome=${HOME}
 bindir=$Thome'/bin'   # destiny directory of the TALYS executable
