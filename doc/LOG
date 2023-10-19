@@ -1,0 +1,189 @@
+Development of TALYS since release of TALYS-1.95
+
+- December 30, 2019
+
+********** Release of TALYS-1.95 **********
+
+- January 4, 2020
+
+Added keyword 'soukho' to allow disabling of Soukhovitskii OMP for 
+actinides. Now parameters relative to KD03 can be given.
+
+- January 16, 2020
+
+Implemented Okumura model for fission yields and subsequent particle 
+evaporation for fission neutrons. Keyword fymodel has been extended 
+with option '4' for this model. Also added fymodel 5 which allows to 
+enter FF population tables.
+
+- February 5, 2020
+
+Introduced keyword 'yieldfile' to allow input of fission fragment 
+yields per pair, and their respective TXE and TKE values. This serves 
+as input for the Okumura model to evaporate each excited fission 
+fragment individually.
+
+- March 2, 2020
+
+Improved the calculation for a populated nucleus, needed after tests 
+done with Toshihiko Kawano on the depletion of fission products. The 
+flux of the populated nucleus is now better mapped onto the decay 
+scheme. Subroutine excitation.f was changed for that. The number of 
+energy bins can now also be equal to 1, for one starting excited level.
+
+- March 23, 2020
+
+Changed the default to 'equidistant y' after binning problems observed 
+by Sandor Sudar at high energy proton reactions.
+
+- March 27, 2020
+
+Added keyword gadjust as 1-component version of gnadjust and gpadjust. 
+This can be used for consistent variation of gn and gp for the 
+2-component exciton model.
+
+- May 24, 2020
+
+Removed a bug in the reading of an external, tabulated optical model 
+file. The first line of that file should contain Z, A, number of lines 
+and (optional) Fermi energy. This did not hurt the sample case for 
+n + U238 which is why the error got unnoticed for so long.
+
+- May 27, 2020
+
+TALYS can now read RIPL OMP, which is for sure necessary for actinides 
+and probably helpful for other cases as well. The initial version has 
+been tested for important actinides.
+
+- May 31, 2020
+
+Extended isospin forbidden transitions for multiple emission using 
+'fisom' keyword on advice of Stephane Goriely.
+
+- Aug 17, 2020
+
+Reprogrammed the isospin transition cases by making a new subroutine 
+isotrans.f.
+
+- Sep 27, 2020
+
+Improved the output of level densities after suggestions by 
+Khashane Malatji: the total parity-dependent level densities were not 
+properly tabulated. Made a new subroutine densitytotP for this, which 
+only affects the level density output, not the reaction calculations.
+
+- Oct 19, 2020
+
+On the advice of Jean-Francois Lemaire, revised various subroutines for 
+the FY and PFNS calculations, There was an error in the CM to LAB 
+integration boundaries and the FY and spin distribution normalizations.
+
+- Dec 22, 2020
+
+Added a 'block' keyword to write large amount of output data in output 
+blocks instead of individual files. With 'block n' the old situation is 
+retained: All spectra, angular distributions etc are stored in an 
+individual file per incident energy. We use 'block y' now to create 
+ENDF files, as it does not produce a huge amount of files.
+
+- Feb 1, 2021
+
+Corrected more coding on FY, PFNS and nubar etc. in massdis.f and 
+ffevap.f on the advice of Jean-Francois Lemaire.
+
+- Feb 15, 2021
+
+Include Marilena Avrigeanu's deuteron break-up model. For this, 
+the structure/ database was extended with the TENDL neutron and 
+protons cross sections.
+
+- March 1, 2021
+
+Corrected pre-neutron FY table on advice of Ali Al-Adili. Also added 
+average gamma and neutron energy per FF in the output.
+
+- April 26, 2021
+
+Changed the default for subactinide fission. Now fismodel 3 is used for
+charged-particle induced reactions on all targets and for neutrons
+on subactinides, which gives a dramatic improvement of the fission 
+cross sections.
+
+- April 28, 2021
+
+Added the option to read in fission fragment distributions from the 
+structure database, after the provision of FF distributions from 
+Ali Al-Adili and Fredrik Nordstroem.
+Added the keyword 'ffmodel' to chose between models of FF distribution.
+
+- June 6, 2021
+
+Updated the resonance parameter files in talys/structure/resfiles.
+Now resonance parameters can be read for tendl.2019 (default), 
+endfb8.0, jeff3.3, cendl3.2 and jendl4.0.
+
+- July 13, 2021
+
+Changed default parameters for break-up reactions for (d,p) and 
+stripping reactions for (alpha,n) to improve the global quality
+of the cross section fits. This extra adjustment is done at the top of 
+breakup.f.
+
+- August 23, 2021
+
+Added a subroutine for Wahl systematics for nubar, which is now 
+written to output by TALYS also without an explicit FF to FY 
+calculation. Separated some of the calculation of nubar for total 
+and nu(A) for that in nudisout.f and nubarout.f. Made keywords
+Cnubar1 and Cnubar2 to alter systematic value for nubar.
+
+- August 27, 2021
+
+Extended the input possibilities for all keywords for which a Z,A
+combination needs to be given. Besides the real Z,A of the nucleus,
+also the Z,A relative to the compound nucleus can be given as index.
+E.g., for the reaction n + Nb93, the keyword+value 
+'aadjust 41 93 1.10' can also be given as 'aadjust 0 1 1.10'
+This only works for Z,A inside the values 2,4 of the compound nucleus.
+
+- September 1, 2021
+
+Enabled the reading in of so called wtable parameters to change the
+width of tabulated photon-strength functions. 
+
+- September 6, 2021
+
+Changed the default in TALYS for photon strength functions after 
+testing with Stephane Goriely. The default is now strength 9 (SMLO),
+strengthm1 3 with 'upbend y'. This is applied for all incident 
+particles, improving the default prediction for (n,g), (g,n), (p,g),
+(a,g) considerably. Automatic wtable parameters are read in for 
+adjustment to capture cross sections in the fast neutron range.
+
+- September 9, 2021
+
+Added new keyword 'ldmodelCN' to assign a particular level density
+model to the compound nucleus only. So e.g. ldmodelCN 1 and ldmodel 2,
+simultaneously in the input file will use CTM for the CN and BFM for 
+all other nuclides in the calculation. The same can be achieved by e.g.
+ldmodel 1 26 57   and ldmodel 2, but the new option avoids having to
+specify the Z,A of the compound nucleus.
+
+- September 28, 2021
+
+Added keywords 'ngfit', 'nnfit', 'nafit', by default disabled, 
+to use fitted nuclear model parameters. If 'best y' then 
+'ngfit y' by default.
+
+- November 4, 2021
+
+Added Iwamoto model for PFNS, which is a variant of the Los Alamos 
+model. Added the keyword 'pfnsmodel' to enable it instead of PFNS coming 
+from explicit FF evaporation. Also added the keywords 'Tmadjust' and 
+'Fsadjust' to adjust the temperature and number of scission neutrons 
+in this model.
+
+- December 29, 2021
+
+Added keywords vfiscoradjust and betafiscoradjust to enable changes 
+relative to vfiscor and betafiscor.
