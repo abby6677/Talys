@@ -10,3 +10,4 @@ BasicSupport/external/eigen*
 BasicSupport/external/json*
 BasicSupport/external/Sandia*
 *.jpg
+samples/*/*.out
