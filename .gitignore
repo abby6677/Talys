@@ -1,0 +1,12 @@
+*Build*/
+*build*/
+*.root
+*.mvmelst
+.ipynb_checkpoints*
+.DS_Store*
+*doxy/html*
+mvme/*
+BasicSupport/external/eigen*
+BasicSupport/external/json*
+BasicSupport/external/Sandia*
+*.jpg
