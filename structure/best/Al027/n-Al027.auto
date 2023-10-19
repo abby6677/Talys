@@ -1,0 +1,13 @@
+projectile n
+element Al
+mass 027
+library irdff2.0
+norm mt=4 width=0.05 emin=0. emax=16. ebeg=0. eend=20. lib=endfb8.0
+norm mt=51 width=0.05 emin=0. emax=16. ebeg=0. eend=20. lib=endfb8.0
+norm mt=52 width=0.05 emin=0. emax=16. ebeg=0. eend=20. lib=endfb8.0
+norm mt=53 width=0.05 emin=0. emax=16. ebeg=0. eend=20. lib=endfb8.0
+norm mt=54 width=0.05 emin=0. emax=16. ebeg=0. eend=20. lib=endfb8.0
+norm mt=16  width=0.02 emin=0. emax=20. ebeg=0. eend=18.
+norm mt=16  isomer=1 width=0.02 emin=0. emax=20. ebeg=0. eend=18.
+norm mt=103 width=0.02 emin=0. emax=20. ebeg=0. eend=18.
+norm mt=107 width=0.02 emin=0. emax=20. ebeg=0. eend=16.

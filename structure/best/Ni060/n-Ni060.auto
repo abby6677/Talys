@@ -1,0 +1,9 @@
+projectile n
+element Ni
+mass 060
+library irdff2.0
+norm mt=51 width=0.05 lib=endfb8.0 emin=0. emax=14. ebeg=0. eend=10.
+norm mt=52 width=0.05 lib=endfb8.0 emin=0. emax=14. ebeg=0. eend=10.
+norm mt=53 width=0.05 lib=endfb8.0 emin=0. emax=14. ebeg=0. eend=10.
+norm mt=54 width=0.05 lib=endfb8.0 emin=0. emax=14. ebeg=0. eend=10.
+norm mt=103 width=0.05 emin=0. emax=30. ebeg=0. eend=28.

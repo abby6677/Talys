@@ -1,0 +1,5 @@
+projectile n
+element Cm
+mass 246
+library endfb8.0
+norm mt=4 width=2.
